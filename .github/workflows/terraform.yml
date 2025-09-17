@@ -5,12 +5,12 @@ on:
         - main
         - stage
         paths:
-        - infrastructure/**
+        - terraform/**
     pull_request:
         branches:
         - main
         paths:
-        - infrastructure/**
+        - terraform/**
 
 
 env:
