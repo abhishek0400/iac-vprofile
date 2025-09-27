@@ -19,9 +19,9 @@ resource "aws_security_group" "vprofile_ec2_sg" {
 }
 
 resource "aws_instance" "vprofile_ec2" {
-  ami           = "ami-0c02fb55956c7d316"
-  instance_type = "t2.micro"
-  subnet_id     = module.vpc.public_subnets[0]
+  ami                    = "ami-0c02fb55956c7d316"
+  instance_type          = "t2.micro"
+  subnet_id              = module.vpc.public_subnets[0]
   vpc_security_group_ids = [aws_security_group.vprofile_ec2_sg.id]
 
   tags = {
