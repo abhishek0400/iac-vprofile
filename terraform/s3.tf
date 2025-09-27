@@ -11,6 +11,6 @@ resource "aws_s3_bucket" "vprofile_bucket" {
   }
 }
 
-output "bucket_name" {
-  value = aws_s3_bucket.vprofile_bucket.bucket
-}
+# output "bucket_name" {
+#   value = aws_s3_bucket.vprofile_bucket.bucket
+# }
