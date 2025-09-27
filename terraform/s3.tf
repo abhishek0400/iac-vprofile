@@ -1,6 +1,6 @@
-provider "aws" {
-  region = var.region
-}
+# provider "aws" {
+#   region = var.region
+# }  no need to add this bcoz its already added in main.tf
 
 resource "aws_s3_bucket" "vprofile_bucket" {
   bucket = "vprofile2025-demo" // Change to a unique bucket name
